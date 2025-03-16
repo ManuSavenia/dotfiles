@@ -1,0 +1,17 @@
+p,alacritty
+p,stow
+p,budgie-desktop
+a,brave-bin
+p,zsh
+p,zsh-completions
+p,zsh-syntax-highlightning
+p,zsh-autosuggestions
+p,nerd-fonts
+p,powerlevel10k
+p,neofetch
+a,gdm
+a,gdm-settings
+a,discord
+a,spotify
+p,visual-studio-code-bin
+p,github-cli
