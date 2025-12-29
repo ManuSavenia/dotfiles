@@ -23,10 +23,4 @@ chmod +x .local/bin/package_installer.py
 sudo ./install.si
 
 ## Actualización de dotfiles
-Cuando realices cambios en la configuración de tu sistema (colores de KDE, alias de Fish, etc.) y quieras guardarlos en este repo, simplemente ejecuta:
-
-```bash
-./backup.sh
-git add .
-git commit -m "Update: descripción de los cambios"
-git push origin main
+Cuando realices cambios en la configuración de tu sistema (colores de KDE, alias de Fish, etc.) y quieras guardarlos en tu repo, simplemente ejecuta backup.sh y luego sube los cambios.
