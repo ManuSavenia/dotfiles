@@ -95,6 +95,14 @@ fi
 echo "--> Habilitando servicio SDDM..."
 systemctl enable sddm.service --force
 
+echo "--> Instalando tema SDDM"
+# Copiar el tema a la carpeta del sistema
+sudo cp -r "$REPO_DIR/sddm/themes/corners" /usr/share/sddm/themes/
+
+# Modificar el archivo de configuración para usar este tema
+# El archivo suele ser /etc/sddm.conf o un archivo en /etc/sddm.conf.d/
+sudo sed -i 's/^Current=.*/Current=corners/' /etc/sddm.conf
+
 # Limpieza
 echo "--> Limpiando..."
 rm -f /etc/sudoers.d/temp-install-rights
