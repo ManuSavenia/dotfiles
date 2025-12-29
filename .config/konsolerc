@@ -1,0 +1,24 @@
+MenuBar=Disabled
+
+[Desktop Entry]
+DefaultProfile=Profile 2.profile
+
+[General]
+ConfigVersion=1
+
+[KonsoleWindow]
+AllowMenuAccelerators=true
+FocusFollowsMouse=true
+ShowWindowTitleOnTitleBar=true
+
+[MemorySettings]
+MemoryLimitValue=1000
+
+[Notification Messages]
+CloseAllTabs=true
+
+[ThumbnailsSettings]
+EnableThumbnails=false
+
+[UiSettings]
+ColorScheme=
