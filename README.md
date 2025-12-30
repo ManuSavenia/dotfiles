@@ -20,7 +20,7 @@ chmod +x install.sh
 chmod +x .local/bin/package_installer.py
 
 # 4. Ejecutar el instalador (como sudo)
-sudo ./install.si
+sudo -E ./install.sh
 
 ## Actualización de dotfiles
 Cuando realices cambios en la configuración de tu sistema (colores de KDE, alias de Fish, etc.) y quieras guardarlos en tu repo, simplemente ejecuta backup.sh y luego sube los cambios.

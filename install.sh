@@ -1,8 +1,19 @@
 #!/bin/bash
-
 # --- VARIABLES ---
 AUR_HELPER="paru" # CachyOS suele traer paru o yay
-REPO_DIR="$HOME/Documents/dotfiles"
+
+# --- VALIDACIÓN DE SUDO ---
+if [ "$EUID" -ne 0 ]; then 
+  echo "Por favor, ejecuta el script usando sudo: sudo ./install.sh"
+  exit
+fi
+
+# --- DETECCIÓN DE USUARIO REAL ---
+REAL_USER=${SUDO_USER:-$USER}
+USER_HOME=$(getent passwd "$REAL_USER" | cut -d: -f6)
+
+# --- CONFIGURACIÓN DE RUTAS ---
+REPO_DIR="$USER_HOME/Documents/dotfiles"
 PROGS_FILE="$REPO_DIR/progs.csv"
 
 # Colores
@@ -10,27 +21,10 @@ RED='\033[0;31m'
 GREEN='\033[0;32m'
 NC='\033[0m'
 
-# --- FUNCIONES ---
-
-error() {
-    echo -e "${RED}ERROR: $1${NC}"
-    exit 1
-}
-
-# Verificar que se ejecuta como root
-if [ "$EUID" -ne 0 ]; then
-    error "Por favor, ejecuta este script como root (sudo ./install.sh)"
-fi
-
-# Detectar el usuario real (no root)
-if [ $SUDO_USER ]; then
-    REAL_USER=$SUDO_USER
-else
-    REAL_USER=$(whoami)
-fi
-
 echo -e "${GREEN}Iniciando instalación para el usuario: $REAL_USER${NC}"
 echo -e "Directorio del repositorio: $REPO_DIR"
+echo -e "Carpeta Home detectada: $USER_HOME"
+
 
 # --- 1. PREPARATIVOS CACHYOS ---
 
