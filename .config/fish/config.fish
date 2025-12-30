@@ -4,4 +4,5 @@ source /usr/share/cachyos-fish-config/cachyos-config.fish
 # potentially disabling fastfetch
 #function fish_greeting
 #    # smth smth
+starship init fish | source
 #end

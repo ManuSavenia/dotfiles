@@ -1,7 +1,7 @@
 MenuBar=Disabled
 
 [Desktop Entry]
-DefaultProfile=Profile 2.profile
+DefaultProfile=fish.profile
 
 [General]
 ConfigVersion=1
@@ -12,7 +12,7 @@ FocusFollowsMouse=true
 ShowWindowTitleOnTitleBar=true
 
 [MemorySettings]
-MemoryLimitValue=1000
+MemoryLimitValue=8192
 
 [Notification Messages]
 CloseAllTabs=true

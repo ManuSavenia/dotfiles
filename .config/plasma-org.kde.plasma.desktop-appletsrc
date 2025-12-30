@@ -5,10 +5,10 @@ RightButton;NoModifier=org.kde.contextmenu
 [ActionPlugins][1]
 RightButton;NoModifier=org.kde.contextmenu
 
-[Containments][19]
+[Containments][110]
 ItemGeometries-1920x1080=
 ItemGeometriesHorizontal=
-activityId=8a9b9825-3d19-42da-ad87-d487f8ea6f47
+activityId=9dc24f76-1900-4337-9855-064d64605592
 formfactor=0
 immutability=1
 lastScreen=0
@@ -16,28 +16,23 @@ location=0
 plugin=org.kde.plasma.folder
 wallpaperplugin=luisbocanegra.smart.video.wallpaper.reborn
 
-[Containments][19][ConfigDialog]
+[Containments][110][ConfigDialog]
 DialogHeight=630
 DialogWidth=810
 
-[Containments][19][Wallpaper][com.github.catsout.wallpaperEngineKde][General]
-SteamLibraryPath[$e]=file:$HOME/.local/share/Steam
-WallpaperSource[$e]=file:$HOME/.local/share/Steam/steamapps/workshop/content/431960/3122339805/scene.json+scene
-WallpaperWorkShopId=3122339805
+[Containments][110][Wallpaper][luisbocanegra.smart.video.wallpaper.reborn][General]
+LastVideo=file:///home/manuel/Documents/wallpapers/wallpaper.mp4
+LastVideoPosition=167800
+VideoUrls=[{"filename":"file:///home/manuel/Documents/wallpapers/wallpaper.mp4","enabled":true,"duration":0,"customDuration":0,"playbackRate":0,"loop":false}]
 
-[Containments][19][Wallpaper][luisbocanegra.smart.video.wallpaper.reborn][General]
-LastVideo=file:///home/manuel/Videos/Other/vines.mp4
-LastVideoPosition=170266
-VideoUrls=[{"filename":"file:///home/manuel/Videos/Other/vines.mp4","enabled":true,"duration":0,"customDuration":0,"playbackRate":0,"loop":false}]
+[Containments][23][Applets][28][Applets][40][Configuration]
+PreloadWeight=34
 
-[Containments][19][Wallpaper][org.kde.image][General]
-Image=file:///usr/share/wallpapers/Next/contents/images/1920x1080.png
-SlidePaths=/usr/share/wallpapers/
+[Containments][23][Applets][28][Applets][41][Configuration]
+PreloadWeight=34
 
-[Containments][19][Wallpaper][org.kde.slideshow][General]
-Image=file:///usr/share/wallpapers/Next/contents/images/1920x1080.png
-SlidePaths=/home/manuel/Pictures/Wallpapers/
-UncheckedSlides=/home/manuel/Pictures/Wallpapers/skyblue.jpg
+[Containments][23][Applets][28][Applets][44][Configuration]
+PreloadWeight=42
 
 [Containments][54]
 activityId=
@@ -51,6 +46,10 @@ wallpaperplugin=org.kde.image
 [Containments][54][Applets][100]
 immutability=1
 plugin=org.kde.plasma.panelspacer
+
+[Containments][54][Applets][100][Configuration][General]
+expanding=false
+length=150
 
 [Containments][54][Applets][101]
 immutability=1
@@ -68,26 +67,9 @@ plugin=org.kde.plasma.panelspacer
 expanding=false
 length=40
 
-[Containments][54][Applets][103]
+[Containments][54][Applets][115]
 immutability=1
-plugin=org.kde.plasma.plasm6desktopindicator
-
-[Containments][54][Applets][103][Configuration][ConfigDialog]
-DialogHeight=630
-DialogWidth=810
-
-[Containments][54][Applets][103][Configuration][General]
-boldOnActive=true
-dotSizeCustom=16
-highlightOnActive=true
-indicatorType=1
-radiusFactor=1
-spacingHorizontal=16
-spacingVertical=8
-
-[Containments][54][Applets][104]
-immutability=1
-plugin=org.kde.plasma.panelspacer
+plugin=org.kde.plasma.pager
 
 [Containments][54][Applets][55]
 immutability=1
@@ -95,8 +77,8 @@ plugin=org.kde.plasma.kickoff
 
 [Containments][54][Applets][55][Configuration]
 PreloadWeight=100
-popupHeight=569
-popupWidth=709
+popupHeight=565
+popupWidth=705
 
 [Containments][54][Applets][55][Configuration][ConfigDialog]
 DialogHeight=630
@@ -121,13 +103,43 @@ wallpaperplugin=org.kde.image
 
 [Containments][54][Applets][59][Applets][105]
 immutability=1
-plugin=org.kde.plasma.networkmanagement
+plugin=org.kde.kdeconnect
 
 [Containments][54][Applets][59][Applets][105][Configuration]
 PreloadWeight=100
 
 [Containments][54][Applets][59][Applets][105][Configuration][General]
 currentDetailsTab=details
+
+[Containments][54][Applets][59][Applets][106]
+immutability=1
+plugin=org.kde.plasma.keyboardindicator
+
+[Containments][54][Applets][59][Applets][107]
+immutability=1
+plugin=org.kde.plasma.weather
+
+[Containments][54][Applets][59][Applets][108]
+immutability=1
+plugin=org.kde.kscreen
+
+[Containments][54][Applets][59][Applets][109]
+immutability=1
+plugin=org.kde.plasma.volume
+
+[Containments][54][Applets][59][Applets][109][Configuration]
+PreloadWeight=55
+
+[Containments][54][Applets][59][Applets][109][Configuration][General]
+migrated=true
+
+[Containments][54][Applets][59][Applets][111]
+immutability=1
+plugin=org.kde.plasma.networkmanagement
+
+[Containments][54][Applets][59][Applets][116]
+immutability=1
+plugin=org.kde.plasma.bluetooth
 
 [Containments][54][Applets][59][Applets][60]
 immutability=1
@@ -188,9 +200,9 @@ DialogHeight=630
 DialogWidth=810
 
 [Containments][54][Applets][59][General]
-extraItems=org.kde.plasma.cameraindicator,org.kde.plasma.clipboard,org.kde.plasma.manage-inputmethod,org.kde.plasma.keyboardlayout,org.kde.plasma.devicenotifier,org.kde.plasma.mediacontroller,org.kde.plasma.notifications,org.kde.plasma.battery,org.kde.plasma.brightness,org.kde.plasma.networkmanagement
+extraItems=org.kde.plasma.cameraindicator,org.kde.plasma.clipboard,org.kde.plasma.manage-inputmethod,org.kde.plasma.keyboardlayout,org.kde.plasma.devicenotifier,org.kde.plasma.mediacontroller,org.kde.plasma.notifications,org.kde.plasma.battery,org.kde.plasma.brightness,org.kde.plasma.networkmanagement,org.kde.plasma.bluetooth,org.kde.kdeconnect,org.kde.plasma.keyboardindicator,org.kde.plasma.weather,org.kde.kscreen,org.kde.plasma.volume
 iconSpacing=1
-knownItems=org.kde.plasma.cameraindicator,org.kde.plasma.clipboard,org.kde.plasma.manage-inputmethod,org.kde.plasma.keyboardlayout,org.kde.plasma.devicenotifier,org.kde.plasma.mediacontroller,org.kde.plasma.notifications,org.kde.plasma.battery,org.kde.plasma.brightness,org.kde.plasma.networkmanagement
+knownItems=org.kde.plasma.cameraindicator,org.kde.plasma.clipboard,org.kde.plasma.manage-inputmethod,org.kde.plasma.keyboardlayout,org.kde.plasma.devicenotifier,org.kde.plasma.mediacontroller,org.kde.plasma.notifications,org.kde.plasma.battery,org.kde.plasma.brightness,org.kde.plasma.networkmanagement,org.kde.plasma.bluetooth,org.kde.kdeconnect,org.kde.plasma.keyboardindicator,org.kde.plasma.weather,org.kde.kscreen,org.kde.plasma.volume
 scaleIconsToFit=true
 
 [Containments][54][Applets][70]
@@ -217,6 +229,7 @@ DialogWidth=810
 
 [Containments][54][Applets][73][Configuration][SensorColors]
 disk/.*/usedPercent=52,84,209
+disk/63e9bed1-4788-4b97-b8a6-6a7fb5f30fe7/usedPercent=131,127,122
 disk/7f6d00b4-65d2-4417-86f0-42f2f8e2f549/usedPercent=209,177,52
 disk/all/usedPercent=52,84,209
 
@@ -252,12 +265,14 @@ immutability=1
 plugin=org.kde.plasma.panelspacer
 
 [Containments][54][Applets][87][Configuration][General]
-expanding=false
 length=900
 
 [Containments][54][Applets][88]
 immutability=1
 plugin=org.kde.plasma.panelspacer
+
+[Containments][54][Applets][88][Configuration][General]
+length=50
 
 [Containments][54][Applets][92]
 immutability=1
@@ -280,38 +295,6 @@ popupWidth=560
 [Containments][54][Applets][93][Configuration][ConfigDialog]
 DialogHeight=630
 DialogWidth=810
-
-[Containments][54][Applets][97]
-immutability=1
-plugin=org.kde.olib.thermalmonitor
-
-[Containments][54][Applets][97][Configuration]
-PreloadWeight=100
-popupHeight=181
-popupWidth=288
-
-[Containments][54][Applets][97][Configuration][ConfigDialog]
-DialogHeight=630
-DialogWidth=810
-
-[Containments][54][Applets][97][Configuration][General]
-sensors=[{"name":"Average CPU Temperature","sensorId":"cpu/all/averageTemperature"},{"name":"GPU Temperature","sensorId":"gpu/gpu1/temperature"}]
-
-[Containments][54][Applets][98]
-immutability=1
-plugin=Minimal.chaac.weather
-
-[Containments][54][Applets][98][Configuration]
-PreloadWeight=100
-popupHeight=301
-popupWidth=350
-
-[Containments][54][Applets][98][Configuration][ConfigDialog]
-DialogHeight=630
-DialogWidth=810
-
-[Containments][54][Applets][98][Configuration][General]
-sizeFontConfig=12
 
 [Containments][54][Applets][99]
 immutability=1
@@ -350,7 +333,7 @@ lowPrioritySensorIds=["memory/physical/total"]
 totalSensors=["memory/physical/usedPercent"]
 
 [Containments][54][General]
-AppletOrder=55;88;103;104;97;100;93;102;99;77;73;101;98;92;87;59;70
+AppletOrder=55;100;115;88;93;102;99;77;73;101;92;87;59;70
 
 [ScreenMapping]
 itemsOnDisabledScreens=

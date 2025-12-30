@@ -1,6 +1,7 @@
 [ActivityManager]
 _k_friendly_name=Activity Manager
 switch-to-activity-8a9b9825-3d19-42da-ad87-d487f8ea6f47=none,none,Switch to activity "Default"
+switch-to-activity-9dc24f76-1900-4337-9855-064d64605592=none,none,Switch to activity "Default"
 
 [KDE Keyboard Layout Switcher]
 Switch keyboard layout to Atsina=none,none,Switch keyboard layout to Atsina
@@ -12,6 +13,17 @@ _k_friendly_name=Keyboard Layout Switcher
 [kaccess]
 Toggle Screen Reader On and Off=Meta+Alt+S,Meta+Alt+S,Toggle Screen Reader On and Off
 _k_friendly_name=Accessibility
+
+[kmix]
+_k_friendly_name=Audio Volume
+decrease_microphone_volume=Microphone Volume Down,Microphone Volume Down,Decrease Microphone Volume
+decrease_volume=none,Volume Down,Decrease Volume
+decrease_volume_small=Shift+Volume Down,Shift+Volume Down,Decrease Volume by 1%
+increase_microphone_volume=Microphone Volume Up,Microphone Volume Up,Increase Microphone Volume
+increase_volume=none,Volume Up,Increase Volume
+increase_volume_small=Shift+Volume Up,Shift+Volume Up,Increase Volume by 1%
+mic_mute=Microphone Mute\tMeta+Volume Mute,Microphone Mute\tMeta+Volume Mute,Mute Microphone
+mute=Volume Mute,Volume Mute,Mute
 
 [ksmserver]
 Halt Without Confirmation=none,,Shut Down Without Confirmation
@@ -199,6 +211,10 @@ stopmedia=Media Stop,Media Stop,Stop media playback
 9CA66364820E7DA7ADBD8EC107EBF92C-open-dashboard-with-running-scripts=none,none,Open dashboard with the current tab's URL used as filter
 9CA66364820E7DA7ADBD8EC107EBF92C-open-new-script=none,none,Open new script tab
 9CA66364820E7DA7ADBD8EC107EBF92C-toggle-enable=none,none,Toggle enable state
+CA377A002146CC9AF16EEFA3BF4C984C-open-dashboard=none,none,Open dashboard
+CA377A002146CC9AF16EEFA3BF4C984C-open-dashboard-with-running-scripts=none,none,Open dashboard with the current tab's URL used as filter
+CA377A002146CC9AF16EEFA3BF4C984C-open-new-script=none,none,Open new script tab
+CA377A002146CC9AF16EEFA3BF4C984C-toggle-enable=none,none,Toggle enable state
 _k_friendly_name=org.chromium.Chromium
 
 [org_kde_powerdevil]
